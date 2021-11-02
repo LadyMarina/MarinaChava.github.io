@@ -11491,6 +11491,10 @@ html {
   width: 25rem;
   border-radius: 50%;
 }
+.logo-small {
+  width: 5rem;
+  border-radius: 50%;
+}
 .award-img{
   width: 19rem;
   height: auto;
@@ -11649,11 +11653,11 @@ html {
 
 .page-section-left {
   padding-top: 40px;
-padding-left: 120px;
+padding-left: 130px;
 }
 .page-section-right {
   padding-top: 40px;
-  padding-left: 80px;
+  padding-left: 130px;
 }
 
 .black-color{
@@ -11663,4 +11667,8 @@ color: #131313;
 .text-itch{
   padding-top: 15px;
   font-size: 30px;
+}
+
+.links-web{
+  padding-top: 40px;
 }
