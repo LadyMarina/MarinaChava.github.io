@@ -11414,14 +11414,14 @@ html {
 }
 /*! PESATNYES VOLS SELCIONAR NAV BAR COLOR*/
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #845EC2;
+  color: #0095FF;
 }
 /*! PESATNYES CUAN FAS CLICK NAV BAR COLOR*/
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #845EC2;
+  color: #0095FF;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #C493FF;
+  color: #0095FF;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11447,7 +11447,7 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #0058AD;
   }
 
   #mainNav.navbar-shrink {
