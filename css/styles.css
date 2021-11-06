@@ -235,11 +235,11 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: rgb(255, 208, 0);
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: rgb(255, 166, 0);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11671,4 +11671,24 @@ color: #131313;
 
 .links-web{
   padding-top: 40px;
+}
+
+.top-space{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.small-banner-text{
+  font-size: 1.0rem;
+
+}
+
+.small-banner-link{
+  font-size: 1.1rem;
+
+}
+
+.small-banner-skills{
+  font-size: 1.3rem;
+  font-style: italic;
 }
