@@ -11652,12 +11652,14 @@ html {
 }
 
 .page-section-left {
-  padding-top: 40px;
-padding-left: 130px;
+  padding-top: 10px;
+  padding-left: 30px;
+
 }
 .page-section-right {
-  padding-top: 40px;
-  padding-left: 130px;
+  padding-top: 10px;
+  padding-left: 30px;
+
 }
 
 .black-color{
