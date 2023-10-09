@@ -11401,7 +11401,7 @@ html {
 
 /*! TITUL NAV BAR COLOR*/
 #mainNav .navbar-brand {
-  color: rgb(255, 187, 0);
+  color: rgb(5, 41, 74);
   font-weight: 400;
 }
 #mainNav .navbar-nav {
@@ -11411,7 +11411,7 @@ html {
 
 /*! FONT NAV BAR COLOR*/
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: rgb(255, 187, 0);
+  color: rgb(5, 41, 74);
 }
 /*! PESATNYES VOLS SELCIONAR NAV BAR COLOR*/
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -11642,7 +11642,7 @@ html {
   line-height: 1.2;
   font-size: 22px;
   color:rgb(26, 26, 26);
-  text-align: center;
+  text-align: left;
 }
 
 .subtitle{
