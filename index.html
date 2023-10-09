@@ -73,9 +73,10 @@
             </div>
         </header>
 
-     <!-- WORK EXPERIENCE-->
-    
 
+
+
+     <!-- WORK EXPERIENCE-->
     <section class="page-section portfolio bg-portfolio" id="workexperience">
         <div class="container-fluid">
             <!-- Portfolio Section Heading-->
@@ -182,6 +183,7 @@
                                  <img class="img-fluid rounded mb-4" src="assets/img/games/ArtHeistPuzzleIcon.png" alt="..." /> 
                                 <!-- Portfolio Modal - Text-->
                                 </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -478,10 +480,80 @@
                  </div>
             </div>
         </section>
-<!-- About ME-->
 
 
-        
+<!-- PERSONAL PROJECTS-->
+<section class="page-section portfolio bg-portfolio" id="games">
+    <div class="container-fluid">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">PERSONAL PROJECTS</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div> 
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+            <div class="col game-card">
+                <div class="row">
+                    <div class="col-md col-lg mb mb-lg">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#generationtMapTool">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/projects/mapGeneratorTool.png"  alt="..." />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="title">Tool for procedural map generation with a biome system</p>
+                        <p class="card-text"><small class="text-muted">Created with Unity toolkit</small></p>
+                        <p class="text-d"> It's a tool built using Unity's UI Toolkit, enabling users to craft their own custom biomes and subsequently generate maps that incorporate these unique biomes. Within these maps, users have the flexibility to adjust terrain elevations and add vegetation.</p>
+                    </div>
+                </div>                   
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<div class="portfolio-modal modal fade" id="generationtMapTool" tabindex="-1" aria-labelledby="generationtMapTool" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Generation map</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <h2>Unity Tool </h2>
+                            <p class="windowProjectTitle">Tool for procedural map generation with a biome system</p>
+                            <p class="lead">This tool generates procedurally generated maps based on user-customized biomes. The tool is developed for Unity and utilizes the Unity UI Toolkit system.</p>
+                            <p class="lead">The tool is divided into three parts: the biome, the map, and the brush.</p>
+                            
+                            <p class="lead"> To determine the height and color of the biome, Perlin noise is employed, which possesses various properties such as octaves, persistence, and lacunarity to achieve a more natural effect.</p>
+                            <p class="lead"> For vegetation generation, a technique called Poisson Disc sampling is used, allowing each of the biomes to be assigned a specific prefab and vegetation density.</p>
+                            <p class="lead"> Once a biome has been created, it can be layered, allowing for the creation of maps with different biomes. Voronoi diagrams are used for biome subdivision, as they are easy to use and effectively divide any surface.</p>
+                            <p class="lead"> When generating the map, it divides a plane into sub-biomes, and each section is assigned the characteristics of a specific biome.</p>
+                            <p class="lead"> Once the map has been generated, the tool also includes a brush that can modify the map, and the vegetation adjusts to this new height.</p>
+                            <p class="card-text"><small class="text-muted">View the video for a better understanding</small></p>
+
+                            
+                        </div>
+                        <video controls>
+                            <source src="assets/vids/MapGenerationTool.mp4" type="video/mp4">
+                            Tu navegador no soporta video HTML5.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
         <!-- Footer-->
