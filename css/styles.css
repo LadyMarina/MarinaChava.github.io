@@ -11326,6 +11326,7 @@ html {
 }
 .page-award {
  padding-bottom: 20px;
+ padding-top: 25px;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11520,7 +11521,7 @@ html {
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .portfolio .portfolio-item {
@@ -11538,8 +11539,11 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(196, 84, 167, 0.9);
+  background-color: rgba(52, 136, 252, 0.3);
 }
+
+
+
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
 }
@@ -11618,6 +11622,29 @@ html {
   color:rgb(26, 26, 26);
 }
 
+.smallInfo {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Elimina la propiedad font-weight para quitar la negrita */
+  line-height: 1.2;
+  font-size: 15px;
+  /* Cambia el color a un tono de gris */
+  color: rgb(128, 128, 128); /* Puedes ajustar los valores de RGB según el tono de gris deseado */
+}
+
+
+.windowProjectTitle{
+  margin-top: 40px;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 22px;
+  color:rgb(26, 26, 26);
+  text-align: center;
+}
+
 .subtitle{
   font-size: 25px;
   font-family: "Verdana";
@@ -11631,6 +11658,13 @@ html {
 }
 .text-d-small{
   font: 8px;
+  font-family: "Verdana";
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-of-title-job{
+  font: 10px;
   font-family: "Verdana";
   text-align: justify;
   text-justify: inter-word;
