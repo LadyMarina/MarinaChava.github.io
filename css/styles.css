@@ -7815,16 +7815,16 @@ textarea.form-control-lg {
 /*! BANNER COLOR */
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color:#ffffff;
+  background-color:#fffcf4;
 }
 
 .bg-work-experience {
   --bs-bg-opacity: 1;
   background-color:#f8fdff ;
 }
-.bg-portfolio{
+.bg-portfolio{ //WORK EXPERIENCE / AWARS/ GAMES PUBLISHED BACKGROUND
   --bs-bg-opacity: 1;
-  background-color:#f8fdff;
+  background-color: #fffcf4;
 }
 
 
@@ -11442,11 +11442,11 @@ html {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
+    color: #fffcf4;
     background: #0095FF;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
+    color: #fffcf4;
     background: #0058AD;
   }
 
