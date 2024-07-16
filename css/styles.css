@@ -11744,3 +11744,20 @@ color: #131313;
 .game_container{
   padding: 50px;
 }
+.competences-icon {
+  max-height: 60px;
+  height: auto;
+  align-items: center;
+}
+.competences-container{
+  padding-top: 20px;
+}
+.competences-title{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.competences-items{
+  text-align: center;
+}
