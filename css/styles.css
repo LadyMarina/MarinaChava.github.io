@@ -11658,12 +11658,7 @@ html {
   font-family: "Verdana";
 }
 
-.text-d{
-  font: 15px;
-  font-family: "Verdana";
-  text-align: justify;
-  text-justify: inter-word;
-}
+
 .text-d-small{
   font: 8px;
   font-family: "Verdana";
@@ -11776,3 +11771,16 @@ color: #131313;
   }
 }
 
+p {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.text-d{
+  font-size: 16px;
+  /*
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  */
+  font-family: Verdana, sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
