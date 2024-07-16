@@ -11354,6 +11354,15 @@ html {
   border-radius: 1rem;
   border-color: #2c3e50;
 }
+
+ .divider-custom-line-games {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
 }
@@ -11730,4 +11739,8 @@ color: #131313;
 .small-banner-skills{
   font-size: 1.3rem;
   font-style: italic;
+}
+
+.game_container{
+  padding: 50px;
 }
