@@ -38,7 +38,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#workexperience">Work experience </a></li>    
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#games">Games</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#personal-projects">Personal Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Tools</a></li>
                        
                     </ul>
                 </div>
@@ -613,10 +613,10 @@
 
 
 <!-- PERSONAL PROJECTS-->
-<section class="page-section portfolio bg-portfolio" id="personal-projects">
+<section class="page-section portfolio bg-portfolio" id="projects">
     <div class="container-fluid">
         <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">PERSONAL PROJECTS</h2>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Tools</h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div> 
@@ -625,27 +625,51 @@
         <div class="row justify-content-center">
             <div class="col game-card">
                 <div class="row">
-                    <div class="col-md col-lg mb mb-lg">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#generationtMapTool">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+
+                    <div class="col">
+                        <div class="col-md col-lg mb mb-lg">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#nickLevelEditor">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/NJLevelEditor/NJLevelCreator.png"  alt="..." />
                             </div>
-                            <img class="img-fluid" src="assets/img/projects/MapGenerator/mapGeneratorTool.png"  alt="..." />
+                        </div>
+                        <div class="col">
+                            <p class="title">Creating and edit all levels in Nick Jr.</p>
+                            <p class="card-text"><small class="text-muted">Created with Unity UI Toolkit</small></p>
+                            <p class="text-d"> I developed a tool used by designers and artists to create all 72 levels of NickJunior Party Adventure. With the tool, you can place cubes, paths, and tricks that adapt to any theme of the game and its environment.</p>
                         </div>
                     </div>
+                    
                     <div class="col">
-                        <p class="title">Tool for procedural map generation with a biome system</p>
-                        <p class="card-text"><small class="text-muted">Created with Unity UI Toolkit</small></p>
-                        <p class="text-d"> It's a tool built using Unity's UI Toolkit, enabling users to craft their own custom biomes and subsequently generate maps that incorporate these unique biomes. Within these maps, users have the flexibility to adjust terrain elevations and add vegetation.</p>
+                        <div class="col-md col-lg mb mb-lg">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#generationMapTool">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/projects/MapGenerator/mapGeneratorTool.png"  alt="..." />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="title">Procedural map generation with a biome system</p>
+                            <p class="card-text"><small class="text-muted">Created with Unity UI Toolkit</small></p>
+                            <p class="text-d"> It's a tool built using Unity's UI Toolkit, enabling users to craft their own custom biomes and subsequently generate maps that incorporate these unique biomes. Within these maps, users have the flexibility to adjust terrain elevations and add vegetation.</p>
+                        </div>
                     </div>
-                </div>                   
+                </div>       
+                
             </div>
         </div>
         <h2 class=" text-center text-itch ">You can find the rest of my games on <a href="https://ladymarina.itch.io/" target="_blank">Itch.io</a></h2>
     </div>
 </section>
 
-<div class="portfolio-modal modal fade" id="generationtMapTool" tabindex="-1" aria-labelledby="generationtMapTool" aria-hidden="true">
+        
+        
+        
+<div class="portfolio-modal modal fade" id="generationMapTool" tabindex="-1" aria-labelledby="generationMapTool" aria-hidden="true">
+    <!-- Generator Map -->
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -661,14 +685,14 @@
                             </div>
                             <h2>Unity Tool </h2>
                             <p class="windowProjectTitle">Tool for procedural map generation with a biome system</p>
-                            <p class="lead">This tool generates procedurally generated maps based on user-customized biomes. The tool is developed for Unity and utilizes the Unity UI Toolkit system.</p>
-                            <p class="lead">The tool is divided into three parts: the biome, the map, and the brush.</p>
+                            <p class="text-d">This tool generates procedurally generated maps based on user-customized biomes. The tool is developed for Unity and utilizes the Unity UI Toolkit system.</p>
+                            <p class="text-d">The tool is divided into three parts: the biome, the map, and the brush.</p>
                             
-                            <p class="lead"> To determine the height and color of the biome, Perlin noise is employed, which possesses various properties such as octaves, persistence, and lacunarity to achieve a more natural effect.</p>
-                            <p class="lead"> For vegetation generation, a technique called Poisson Disc sampling is used, allowing each of the biomes to be assigned a specific prefab and vegetation density.</p>
-                            <p class="lead"> Once a biome has been created, it can be layered, allowing for the creation of maps with different biomes. Voronoi diagrams are used for biome subdivision, as they are easy to use and effectively divide any surface.</p>
-                            <p class="lead"> When generating the map, it divides a plane into sub-biomes, and each section is assigned the characteristics of a specific biome.</p>
-                            <p class="lead"> Once the map has been generated, the tool also includes a brush that can modify the map, and the vegetation adjusts to this new height.</p>
+                            <p class="text-d"> To determine the height and color of the biome, Perlin noise is employed, which possesses various properties such as octaves, persistence, and lacunarity to achieve a more natural effect.</p>
+                            <p class="text-d"> For vegetation generation, a technique called Poisson Disc sampling is used, allowing each of the biomes to be assigned a specific prefab and vegetation density.</p>
+                            <p class="text-d"> Once a biome has been created, it can be layered, allowing for the creation of maps with different biomes. Voronoi diagrams are used for biome subdivision, as they are easy to use and effectively divide any surface.</p>
+                            <p class="text-d"> When generating the map, it divides a plane into sub-biomes, and each section is assigned the characteristics of a specific biome.</p>
+                            <p class="text-d"> Once the map has been generated, the tool also includes a brush that can modify the map, and the vegetation adjusts to this new height.</p>
                             <p class="card-text"><small class="text-muted">View the video for a better understanding</small></p>
                         </div>
                         <video controls>
@@ -682,7 +706,7 @@
                             <img
                                 src="assets/img/projects/MapGenerator/pic1.png"
                                 class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
+                                alt="MapGenerator"
                             />
                         
                             </div>
@@ -691,7 +715,7 @@
                             <img
                                 src="assets/img/projects/MapGenerator/pic2.png"
                                 class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Mountains in the Clouds"
+                                alt="MapGenerator"
                             />
                         
                             
@@ -701,7 +725,7 @@
                             <img
                                 src="assets/img/projects/MapGenerator/pic3.png"
                                 class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Yosemite National Park"
+                                alt="MapGenerator"
                             />
                             </div>
                         </div>
@@ -712,6 +736,84 @@
         </div>
     </div>
 </div>
+
+        
+
+
+   <div class="portfolio-modal modal fade" id="nickLevelEditor" tabindex="-1" aria-labelledby="nickLevelEditor" aria-hidden="true">ç
+       <!-- NICK JUNIOR LEVEL EDITOR -->
+       
+       <div class="modal-dialog modal-xl">
+           <div class="modal-content">
+               <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+               <div class="modal-body text-center pb-5">
+                   <div class="container">
+                       <div class="row justify-content-center">
+                           <div class="col-lg-8">
+                               <!-- Portfolio Modal - Title-->
+                               <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Level editor</h2>
+                               <!-- Icon Divider-->
+                               <div class="divider-custom">
+                                   <div class="divider-custom-line"></div>
+                               </div>
+                               <h2>Unity Tool </h2>
+                               <p class="windowProjectTitle">Tool for level creation for Nick junior</p>
+                                   <p class="text-d">I was responsible for designing and developing a tool that help designers and artist make <b>all the levels and level selectors of the game. </b>The game consists of<b> 72 levels </b>divided into 6 distinct worlds. </p>
+                               <p class="text-d">The tool was designed to help designers create level structures, place traps, entrances, exits, and assist artists in decorating. With this tool, devs can not only place and remove various elements but also integrate artists' meshes and adapt them to each of the game's IPs.</p>
+
+                               <p class="text-d"> What the tool can do:</p>
+                               
+                               <ul class="left-aligned-list">
+                                   <li class="text-d">Place full and half cubes.</li>
+                                   <li class="text-d">Place paths.</li>
+                                   <li class="text-d">Place tricks.</li>
+                                   <li class="text-d">Set a skin for the map.</li>
+                                   <li class="text-d">Set a custom skin in parts of the map.</li>
+                                   <li class="text-d">Set the waypoints for the AI.</li>
+                                   
+                               </ul>
+                               
+                               
+                               <p class="card-text"><small class="text-muted">View the video for a better understanding</small></p>
+                           </div>
+                           <video controls>
+                               <source src="assets/vids/NickJuniorToolVid.mp4" type="video/mp4">
+                               Tu navegador no soporta video HTML5.
+                           </video>
+
+                           <!-- Gallery -->
+                           
+                           <div class="row projects-images">
+                               <p class="card-text"><small class="text-muted">Final levels from the game (screenshots extracted from the trailer).</small></p>
+                               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                   <img
+                                           src="assets/img/projects/NJLevelEditor/level1.png"
+                                           class="w-100 shadow-1-strong rounded mb-4"
+                                           alt="MapGenerator"
+                                   />
+                               </div>
+                               <div class="col-lg-4 mb-4 mb-lg-0">
+                                   <img
+                                           src="assets/img/projects/NJLevelEditor/level2.png"
+                                           class="w-100 shadow-1-strong rounded mb-4"
+                                           alt="MapGenerator"
+                                   />
+                               </div>
+
+                               <div class="col-lg-4 mb-4 mb-lg-0">
+                                   <img
+                                           src="assets/img/projects/NJLevelEditor/level3.png"
+                                           class="w-100 shadow-1-strong rounded mb-4"
+                                           alt="MapGenerator"
+                                   />
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 
 
 
