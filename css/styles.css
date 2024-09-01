@@ -11745,6 +11745,7 @@ color: #131313;
   height: auto;
   align-items: center;
 }
+
 .competences-container{
   padding-top: 20px;
 }
@@ -11756,6 +11757,18 @@ color: #131313;
 
 .competences-items{
   text-align: center;
+}
+
+.console-icon {
+  max-height: 30px;
+  height: auto;
+  align-items: center;
+}
+
+.console-icon-container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
 }
 
 
