@@ -42,7 +42,7 @@
   --bs-light: #ffffff;
   --bs-dark: #212529;
   --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-secondary-rgb: 238,238,238;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -59,7 +59,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #eeeeee;
   --bs-body-bg: #fff;
 }
 
@@ -7722,8 +7722,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-secondary-rgb)) !important;
 }
 
 .text-success {
@@ -7812,30 +7811,8 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color:#0DBDFB; 
 }
-/*! BANNER COLOR */
-.bg-secondary {
-  --bs-bg-opacity: 1;
-  background-color:#fffcf4;
-}
-
-.bg-work-experience {
-  --bs-bg-opacity: 1;
-  background-color:#f8fdff ;
-}
-.bg-portfolio{ //WORK EXPERIENCE / AWARS/ GAMES PUBLISHED BACKGROUND
-  --bs-bg-opacity: 1;
-  background-color: #fffcf4;
-}
 
 
-.bg-about-me {
-  --bs-bg-opacity: 1;
-  background-color: #0096D2;
-}
-.bg-award {
-  --bs-bg-opacity: 1;
-  background-color:#f8fdff;
-}
 
 
 /*! 
@@ -11407,28 +11384,12 @@ html {
   color: #0dcaf0;
 }
 
-/*! TITUL NAV BAR COLOR*/
-#mainNav .navbar-brand {
-  color: rgb(5, 41, 74);
-  font-weight: 400;
-}
+
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 
 
-/*! FONT NAV BAR COLOR*/
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: rgb(5, 41, 74);
-}
-/*! PESATNYES VOLS SELCIONAR NAV BAR COLOR*/
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #0095FF;
-}
-/*! PESATNYES CUAN FAS CLICK NAV BAR COLOR*/
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #0095FF;
-}
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   color: #0095FF;
 }
@@ -11620,15 +11581,7 @@ html {
 	position: absolute;
 }
 
-.title{
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 35px;
-  color:rgb(26, 26, 26);
-}
+
 
 .smallInfo {
   margin-top: 0;
@@ -11796,4 +11749,62 @@ p {
   font-family: Verdana, sans-serif;
   text-align: justify;
   text-justify: inter-word;
+}
+
+
+
+/*! BANNER COLOR */
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color:#222222;
+}
+
+.bg-work-experience {
+  --bs-bg-opacity: 1;
+  background-color:#f8fdff ;
+}
+.bg-portfolio {
+  background-color: #222222;
+}
+
+
+.bg-about-me {
+  --bs-bg-opacity: 1;
+  background-color: #0096D2;
+}
+.bg-award {
+  --bs-bg-opacity: 1;
+  background-color:#f8fdff;
+}
+
+/*! TITUL NAV BAR COLOR*/
+#mainNav .navbar-brand {
+  color: #eeeeee;
+  font-weight: 400;
+}
+/*! FONT NAV BAR COLOR*/
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #eeeeee;
+}
+/*! PESATNYES VOLS SELCIONAR NAV BAR COLOR*/
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #0095FF;
+}
+/*! PESATNYES CUAN FAS CLICK NAV BAR COLOR*/
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #0095FF;
+}
+
+.title{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 35px;
+  color:rgb(26, 26, 26);
+}
+
+.title-container {
+  color: #eeeeee;
 }
