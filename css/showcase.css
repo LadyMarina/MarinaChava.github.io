@@ -33,7 +33,7 @@
 
 html { scroll-behavior: smooth; }
 /* offset for sticky nav when jumping to anchors */
-section[id], header[id], div[id].jump { scroll-margin-top: 90px; }
+section[id], header[id], .jump { scroll-margin-top: 96px; }
 
 body#page-top {
   margin: 0;
@@ -382,6 +382,57 @@ p { font-family: inherit; color: var(--dim); }
 .gallery video { aspect-ratio: auto; object-fit: contain; background:#000; }
 .gallery .span-all { grid-column: 1 / -1; aspect-ratio: auto; }
 @media (max-width: 560px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+
+/* ------------------------------------------------------------------ */
+/* Company block (work experience + the games made there)             */
+/* ------------------------------------------------------------------ */
+.company { margin-bottom: 4.5rem; }
+.company:last-child { margin-bottom: 0; }
+.company-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.5rem 1.6rem;
+  background: linear-gradient(180deg, var(--panel-2), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.company-logo {
+  width: 64px; height: 64px; flex: none;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.96);
+  object-fit: contain; padding: 8px;
+  border: 1px solid var(--line);
+}
+.company-info { flex: 1; min-width: 0; }
+.company-name { font-size: 1.5rem; font-weight: 700; margin: 0; line-height: 1.2; }
+.company-date { color: var(--muted); font-size: 0.9rem; display: block; margin-top: 0.15rem; }
+.company-stack { color: var(--cyan-2); font-size: 0.95rem; margin: 0.6rem 0 0.5rem; }
+.company-stack b { color: #fff; }
+.company-desc { color: var(--dim); margin: 0; }
+.company-games-tag {
+  color: var(--muted); font-size: 0.9rem; margin: 0.6rem 0 0;
+}
+.company-games-tag b { color: var(--dim); }
+
+/* Games belonging to a company sit just under its header */
+.company-games {
+  margin-top: 1.4rem;
+  padding-left: 1.6rem;
+  border-left: 2px solid var(--line);
+  margin-left: 1.2rem;
+}
+.company-games .showcase { margin-bottom: 1.6rem; }
+.company-games .showcase:last-child { margin-bottom: 0; }
+.company-games-label {
+  display: block;
+  font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--coral); margin: 0 0 1rem;
+}
+@media (max-width: 620px) {
+  .company-games { padding-left: 0.9rem; margin-left: 0.4rem; }
+  .company-head { flex-direction: column; }
+}
 
 /* ------------------------------------------------------------------ */
 /* Game jams gallery                                                  */
