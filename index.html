@@ -11,16 +11,21 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" href="style.css">    
+        <link rel="stylesheet" href="style.css">
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="css/responsive.css">
-        <!-- Custom CSS --> 
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Rebrand 2026 (must load last to override base theme) -->
+        <link href="css/rebrand.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -929,5 +934,25 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- Rebrand: subtle scroll-reveal for cards -->
+        <script>
+            (function () {
+                if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+                var targets = document.querySelectorAll(".game-card, .game_container, .award-img, .competences-container");
+                if (!("IntersectionObserver" in window) || !targets.length) return;
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12 });
+                targets.forEach(function (el) {
+                    el.classList.add("reveal");
+                    io.observe(el);
+                });
+            })();
+        </script>
     </body>
 </html>
