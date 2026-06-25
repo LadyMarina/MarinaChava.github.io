@@ -314,6 +314,20 @@ p { font-family: inherit; color: var(--dim); }
   z-index: 0;
 }
 .showcase-banner-content { position: relative; z-index: 1; width: 100%; }
+
+/* Game banners (inside a company): wide, compact, horizontal strip.
+   Uses cover so it fills the strip; the game title is shown as text anyway. */
+.company-games .showcase-banner {
+  aspect-ratio: 16 / 6;
+  max-height: 360px;
+  background-size: cover;
+}
+.company-games .showcase-banner::before {
+  background: linear-gradient(180deg, rgba(6,7,11,0.25) 0%, rgba(6,7,11,0.05) 35%, rgba(6,7,11,0.45) 72%, rgba(6,7,11,0.95) 100%);
+}
+@media (max-width: 620px) {
+  .company-games .showcase-banner { aspect-ratio: 16 / 9; }
+}
 .showcase-kicker {
   display: inline-block;
   font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
@@ -386,41 +400,72 @@ p { font-family: inherit; color: var(--dim); }
 /* ------------------------------------------------------------------ */
 /* Company block (work experience + the games made there)             */
 /* ------------------------------------------------------------------ */
-.company { margin-bottom: 4.5rem; }
+.company { margin-bottom: 3rem; padding-top: 3.5rem; }
+.company:first-of-type { padding-top: 0; }
 .company:last-child { margin-bottom: 0; }
+/* clear separator marking the jump between companies */
+.company:not(:first-of-type) {
+  border-top: 1px solid var(--line-2);
+}
+
 .company-head {
+  position: relative;
   display: flex;
   align-items: flex-start;
-  gap: 1.2rem;
-  padding: 1.5rem 1.6rem;
-  background: linear-gradient(180deg, var(--panel-2), var(--panel));
-  border: 1px solid var(--line);
+  gap: 1.4rem;
+  padding: 1.8rem 1.9rem 1.8rem 2.3rem;
+  background:
+    linear-gradient(120deg, rgba(24,195,255,0.10), rgba(255,77,141,0.06) 60%, transparent),
+    linear-gradient(180deg, var(--panel-2), var(--panel));
+  border: 1px solid var(--line-2);
   border-radius: var(--radius);
+  box-shadow: 0 22px 55px -32px rgba(0,0,0,0.85);
+  overflow: hidden;
+}
+/* accent bar so the company header reads as a clear anchor */
+.company-head::before {
+  content: "";
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: var(--grad);
 }
 .company-logo {
-  width: 64px; height: 64px; flex: none;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.96);
-  object-fit: contain; padding: 8px;
+  width: 72px; height: 72px; flex: none;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.97);
+  object-fit: contain; padding: 9px;
   border: 1px solid var(--line);
+  box-shadow: 0 10px 26px -14px rgba(0,0,0,0.7);
 }
 .company-info { flex: 1; min-width: 0; }
-.company-name { font-size: 1.5rem; font-weight: 700; margin: 0; line-height: 1.2; }
-.company-date { color: var(--muted); font-size: 0.9rem; display: block; margin-top: 0.15rem; }
-.company-stack { color: var(--cyan-2); font-size: 0.95rem; margin: 0.6rem 0 0.5rem; }
+.company-name {
+  font-size: 1.75rem; font-weight: 700; margin: 0; line-height: 1.15;
+}
+.company-date {
+  display: inline-block;
+  color: var(--cyan-2);
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
+  margin-top: 0.5rem;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+}
+.company-stack { color: var(--dim); font-size: 0.95rem; margin: 0.8rem 0 0.5rem; }
 .company-stack b { color: #fff; }
 .company-desc { color: var(--dim); margin: 0; }
 .company-games-tag {
-  color: var(--muted); font-size: 0.9rem; margin: 0.6rem 0 0;
+  color: var(--muted); font-size: 0.92rem; margin: 0.8rem 0 0;
 }
 .company-games-tag b { color: var(--dim); }
 
 /* Games belonging to a company sit just under its header */
 .company-games {
-  margin-top: 1.4rem;
-  padding-left: 1.6rem;
-  border-left: 2px solid var(--line);
-  margin-left: 1.2rem;
+  margin-top: 1.6rem;
+  padding-left: 1.8rem;
+  border-left: 3px solid;
+  border-image: linear-gradient(180deg, var(--cyan), var(--magenta)) 1;
+  margin-left: 1.4rem;
 }
 .company-games .showcase { margin-bottom: 1.6rem; }
 .company-games .showcase:last-child { margin-bottom: 0; }
