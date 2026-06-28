@@ -313,7 +313,14 @@ p { font-family: inherit; color: var(--dim); }
   background: linear-gradient(180deg, rgba(6,7,11,0) 55%, rgba(6,7,11,0.35) 74%, rgba(6,7,11,0.92) 100%);
   z-index: 0;
 }
-.showcase-banner-content { position: relative; z-index: 1; width: 100%; }
+.showcase-banner-content {
+  position: relative; z-index: 1; width: 100%;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+/* game title sits ABOVE the kicker ("Studio — platform") line */
+.showcase-title { order: 1; }
+.showcase-kicker { order: 2; }
+.showcase-platforms { order: 3; }
 
 /* Game banners (inside a company): wide, compact, horizontal strip.
    Uses cover so it fills the strip; the game title is shown as text anyway. */
@@ -340,10 +347,16 @@ p { font-family: inherit; color: var(--dim); }
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
 }
 .showcase-title {
+  display: inline-block;
   font-size: clamp(1.7rem, 3.4vw, 2.5rem);
   line-height: 1.08;
   margin: 0 0 0.5rem;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 0.3rem 1.2rem;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
 }
 .showcase-platforms { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
 .plat {
@@ -441,6 +454,13 @@ p { font-family: inherit; color: var(--dim); }
 .company-name {
   font-size: 2.1rem; font-weight: 700; margin: 0; line-height: 1.1;
 }
+.company-role {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coral);
+}
 .company-date {
   display: inline-block;
   color: var(--cyan-2);
@@ -470,8 +490,17 @@ p { font-family: inherit; color: var(--dim); }
   font-size: 0.74rem; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--muted); margin: 0 0 1.1rem;
 }
+/* small divider between two games of the same company */
+.game-sep {
+  border: none;
+  height: 2px; width: 110px;
+  background: var(--grad);
+  border-radius: 999px;
+  opacity: 0.55;
+  margin: 0 auto 1.7rem;
+}
 .company-games .showcase {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.7rem;
   border-radius: 14px;
   box-shadow: 0 16px 36px -26px rgba(0,0,0,0.8);
 }
