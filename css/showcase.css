@@ -630,9 +630,9 @@ p { font-family: inherit; color: var(--dim); }
 }
 .award-tile {
   display: grid; place-items: center;
-  background: rgba(255,255,255,0.96);
+  background: transparent;
   border-radius: var(--radius);
-  border: 1px solid var(--line);
+  border: none;
   padding: 1.6rem;
   transition: transform .22s ease, box-shadow .22s ease;
 }
