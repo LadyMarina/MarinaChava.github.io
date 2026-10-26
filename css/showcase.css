@@ -475,22 +475,48 @@ img { display: block; }
 @media (max-width: 560px) { .gallery { grid-template-columns: repeat(2,1fr); } }
 
 /* ================================================================== */
-/* Company entries (work experience) — open layout, no cards          */
+/* Company entries (work experience) — timeline layout                */
 /* ================================================================== */
+
+/* Wrapper that holds the vertical line */
+.timeline-wrap {
+  position: relative;
+  padding-left: 52px;
+}
+
+/* Vertical connecting line — runs from first to last dot */
+.timeline-wrap::before {
+  content: "";
+  position: absolute;
+  left: 20px;          /* center of the 20px circles (left: 10px + 10px offset) */
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--cyan) 0%, var(--magenta) 100%);
+  opacity: 0.5;
+}
+
 .company {
   position: relative;
   margin-bottom: 4rem;
-  padding-top: 3rem;
 }
 .company:last-child { margin-bottom: 0; }
 
-/* Separator line: right to left, solid, no fading */
+/* Circle dot — centered on the vertical line */
 .company::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(to left, var(--cyan) 0%, var(--magenta) 100%);
+  left: -41px;   /* 20px (line center) - 10px (half circle) - 52px (wrap padding) + 1px border */
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    var(--grad) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px rgba(24,195,255,0.35);
+  z-index: 2;
 }
 
 .company-head {
