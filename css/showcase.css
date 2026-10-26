@@ -488,17 +488,16 @@ img { display: block; }
 .timeline-wrap::before {
   content: "";
   position: absolute;
-  left: 20px;          /* center of the 20px circles (left: 10px + 10px offset) */
+  left: 20px;
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background: linear-gradient(180deg, var(--cyan) 0%, var(--magenta) 100%);
-  opacity: 0.5;
+  background: rgba(255,255,255,0.25);
 }
 
 .company {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
 }
 .company:last-child { margin-bottom: 0; }
 
@@ -511,11 +510,9 @@ img { display: block; }
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background:
-    linear-gradient(var(--bg), var(--bg)) padding-box,
-    var(--grad) border-box;
-  border: 2px solid transparent;
-  box-shadow: 0 0 10px rgba(24,195,255,0.35);
+  background: var(--bg);
+  border: 2px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0 8px rgba(255,255,255,0.15);
   z-index: 2;
 }
 
@@ -528,9 +525,9 @@ img { display: block; }
 .company-head::before { display: none; }
 
 .company-logo {
-  width: 80px; height: 80px; flex: none;
-  border-radius: 14px; background: #fff;
-  object-fit: contain; padding: 10px;
+  width: 150px; height: 150px; flex: none;
+  border-radius: 20px; background: #fff;
+  object-fit: contain; padding: 16px;
   border: 1px solid var(--line);
 }
 .company-info { flex: 1; min-width: 0; }
@@ -565,9 +562,9 @@ img { display: block; }
 .game-sep {
   border: none; height: 1px;
   background: linear-gradient(90deg, var(--line-2), transparent);
-  margin: 1.6rem 0;
+  margin: 3rem 0;
 }
-.company-games .showcase { margin-bottom: 1.4rem; border-radius: 12px; }
+.company-games .showcase { margin-bottom: 3rem; border-radius: 12px; }
 .company-games .showcase:last-child { margin-bottom: 0; }
 .company-games .showcase-title { font-size: clamp(1.1rem,2.1vw,1.5rem); }
 .company-games .showcase-kicker { font-size: 0.69rem; margin-bottom: 0.48rem; }
